@@ -1,5 +1,6 @@
 % LaTeX resume using res.cls
 \documentclass[margin,11pt]{res}
+\usepackage{hyperref}   % ability to create clickable hyperlinks
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 \oddsidemargin=-0.4in
@@ -24,13 +25,18 @@
 \begin{resume}
 
 \section{SUMMARY}
-Seeking a full time engineering position. Intended focuses are in embedded systems (both hardware and software), but I also have interests in machine learning and data analysis. Motivated and hard-working individual with an interest in making a difference and collaborating with like-minded people. Extensive background in C, C++ and Python.
+Seeking a full-time software engineering position. I have 2+ years experience in
+embedded Linux software development in C++, and a year of experience in data
+processing and machine learning in Python. I am a motivated and hard-working
+individual with an desire to make a difference and collaborate with
+like-minded people.
 
 \vspace{-10pt}
 \section{EDUCATION}
-%\sl will be bold italic in New Century Schoolbook (or any postscript font) and just slanted in Computer Modern (default) font
+% \sl will be bold italic in New Century Schoolbook (or any postscript font) and
+% just slanted in Computer Modern (default) font
 \textbf{University of Michigan} \hfill Ann Arbor, MI\\
-B.S.E. in Computer Engineering \hfill Expected May 2017\\
+B.S.E. in Computer Engineering \hfill May 2017\\
 Minor in Music\\
 GPA: 3.94/4.0\\
 \vspace{-24pt}
@@ -43,20 +49,34 @@ GPA: 3.94/4.0\\
 %	EECS 280: Electromagnetics I & PHYS 340: Waves, Heat, and Light\\
 %	EECS 330: Electromagnetics II & EECS 320: Semiconductor Devices\\
 %	EECS 351: Digital Signal Processing & EECS 475: Cryptography\\
-    EECS 473: Advanced Embedded Systems & (Senior Design Project)\\
-	EECS 461: Embedded Control Systems & EECS 482: Operating Systems\\
-	EECS 373: Microprocessor Programming & EECS 445: Machine Learning\\
-	EECS 281: Data Structures and Algorithms & EECS 388: Computer Security\\
+%   EECS 473: Advanced Embedded Systems & (Senior Design Project)\\
+    EECS 473: Advanced Embedded Systems & EECS 482: Operating Systems\\
+    EECS 461: Embedded Control Systems & EECS 445: Machine Learning\\
+	EECS 373: Microprocessor Programming & EECS 388: Computer Security\\
 \end{tabular}
 
 \section{WORK EXPERIENCE}
-\textbf{Merit Network, Inc.} \hfill Ann Arbor, MI\\
-\textsl{Research Assistant, Data Analyst} \hfill May 2016 - Present
+\textbf{Control-Tec, LLC.} \hfill Allen Park, MI\\
+\textsl{C++ Software Developer, Embedded Linux} \hfill May 2017 - Present
 \begin{itemize}
 	\itemsep -2pt
-	\item Worked in Security Research division under Dr. Michael Kallitsis
-	\item Assisted with developing Machine Learning algorithms and tools to detect false data injection attacks on the smart grid.
-	\item Primary author on a research paper detailing an experiment conducted at NextEnergy in Detroit, MI, to test custom analysis software in a real-world environment.
+    \item Developed next-generation automotive data collection software for\\
+          live data-processing applications.
+    \item Managed a small team of engineers to assist in software development\\
+          and white-box testing.
+    \item Extensive experience with Legato embedded Linux IoT platform.
+\end{itemize}
+
+\textbf{Merit Network, Inc.} \hfill Ann Arbor, MI\\
+\textsl{Research Assistant, Data Analyst} \hfill May 2016 - May 2017
+\begin{itemize}
+	\itemsep -2pt
+	\item Worked in Security Research division under Dr. Michalis Kallitsis
+    \item Assisted with developing Machine Learning algorithms and tools to\\
+          detect false data injection attacks on the smart grid.
+    \item Primary author on a research paper detailing an experiment conducted\\
+          at NextEnergy in Detroit, MI, to test custom analysis software in a\\
+          real-world environment.
 \end{itemize}
 
 \vspace{-10pt}
@@ -64,19 +84,15 @@ GPA: 3.94/4.0\\
 \textsl{Software Engineering Intern} \hfill May 2015 - Sept 2015
 \begin{itemize}
 	\itemsep -2pt
-	\item Assisted in research and development of the Mycestro wearable computer mouse and worked with a team of engineers to develop integration software in Python and Ruby for using the Mycestro as a 3D mouse with Autodesk Maya and Google SketchUp.
-	\item Wrote Python code to model rotations of simulated objects using matrix rotations and vector mathematics. Motion data from the Mycestro was then used to control these rotations. This code added features to the Mycestro that enabled the company to double its potential market. 
-	\item Managed shipping department by organizing over 3500 customer records in Excel, testing units for quality, and packaging and mailing all incoming orders.
-	\item Attended patent strategy and business development meetings, and gave sales presentations to potential investors.
+    \item Assisted in research and development of the Mycestro wearable computer\\
+          mouse and worked with a team of engineers to develop integration\\
+          software in Python and Ruby for using the Mycestro as a 3D mouse.
+    \item Wrote Python plugins to model rotations of simulated objects using\\
+          matrix rotations and vector mathematics. Motion data from the Mycestro\\
+          was then used to control these rotations.
+    \item Attended patent strategy and business development meetings, and gave\\
+          sales presentations to potential investors.
 \end{itemize}
-
-\vspace{-10pt}
-\section{STUDENT\\ACTIVITIES}
-\textbf{University of Michigan Marching Band} \hfill Aug 2013 - Present\\
-\textsl{Trumpet Player}\\
-\textsl{Manager, MMB Merchandise Staff from 2014-2015}\\
-\textsl{Treasurer, Tau Beta Sigma Honorary Band Society from 2015-2017}\\
-\vspace{-10pt}
 
 \vspace{-10pt}
 \section{TECHNICAL SKILLS}
@@ -88,18 +104,24 @@ Microsoft Word and Excel, MATLAB, LaTeX, Git\\
 Experience designing custom PCBs using Eagle and soldering by hand
 
 \vspace{-10pt}
-\section{HONORS\\ \& AWARDS}
-\textbf{Scholarships}\\
-Class of 1931 Engineering Alumni Scholarship, University of Michigan\\
-Society of Hispanic Professional Engineers Scholarship
+\section{PERSONAL}
+\textbf{University of Michigan Marching Band} \hfill Aug 2013 - May 2017\\
+\textsl{Trumpet Player}\\
+\textsl{Manager, MMB Merchandise Staff from 2014-2015}\\
+\textsl{Treasurer, Tau Beta Sigma Honorary Band Society from 2015-2017}\\
 
-\textbf{Other Honors}\\
-University Honors and Dean's List, University of Michigan (7 semesters)\\
-Eagle Scout, Troop 701 in Strongsville, OH
+\vspace{-20pt}
+\section{WEBSITES}
+\textbf{LinkedIn:}
+\href{https://www.linkedin.com/in/adrian-padin-320a34a4}{https://www.linkedin.com/in/adrian-padin-320a34a4}\\
+\textbf{GitHub:}
+\href{https://github.com/padinadrian}{https://github.com/padinadrian}\\
+\textbf{Stack Overflow:}
+\href{https://stackoverflow.com/users/story/5179394}{https://stackoverflow.com/users/story/5179394}\\
+
 
 \vspace{10pt}
 \moveleft.5\hoffset\centerline{\large\bf References available upon request}
-
 
 \end{resume}
 \end{document}
