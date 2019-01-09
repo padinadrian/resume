@@ -4,14 +4,22 @@ My resume, updated periodically. Latest version is [AdrianPadinResume.pdf](Adria
 ## Building with LaTeX
 You can generate the PDF yourself from the TeX files.
 
-On Windows you will need to download and install a LaTeX compiler. I recommend MiKTeX: https://miktex.org/download
+### Installing LaTeX Compiler
 
-On Ubuntu/Debian Linux and Mac you should already have a TeX compiler installed.
+On Windows you will need to download and install a LaTeX compiler. I recommend [MiKTeX](https://miktex.org/download).
 
-Then open your respective terminal and type in the following command:
+On Ubuntu/Debian Linux and Mac, you should already have a TeX compiler installed.
+
+### Building from Source
+
+To get the source files, you can either clone this git repository or download
+the files. At the bare minimum you need `AdrianPadinResume.tex` and `res.cls`.
+
+Place both of these files in the same folder. Then open your respective
+terminal and type in the following command:
 
 ```
 pdflatex AdrianPadinResume.tex
 ```
 
-This will generate a file named `AdrianPadinResume.pdf`
+This will generate a file named `AdrianPadinResume.pdf` in the same folder.
