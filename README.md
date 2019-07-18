@@ -8,7 +8,11 @@ You can generate the PDF yourself from the TeX files.
 
 On Windows you will need to download and install a LaTeX compiler. I recommend [MiKTeX](https://miktex.org/download).
 
-On Ubuntu/Debian Linux and Mac, you should already have a TeX compiler installed.
+On Ubuntu/Debian Linux you can install the most common LaTeX distribution with this command:
+
+```
+sudo apt-get install texlive-full
+```
 
 ### Building from Source
 
