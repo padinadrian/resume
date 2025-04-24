@@ -11,7 +11,7 @@ On Windows you will need to download and install a LaTeX compiler. I recommend [
 On Ubuntu/Debian Linux you can install the most common LaTeX distribution with this command:
 
 ```
-sudo apt-get install texlive-full
+sudo apt install texlive-latex-extra texlive-bibtex-extra texlive-science
 ```
 
 ### Building from Source
